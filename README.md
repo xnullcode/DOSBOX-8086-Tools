@@ -11,7 +11,7 @@ Note: These are native 16-bit MS-DOS binaries. They cannot run directly on moder
 ### Assemblers & Linker
 *   **MASM.EXE (Microsoft Macro Assembler):** Translates your human-readable assembly source files (.ASM) into machine code object files (.OBJ).
 *   **TASM.EXE (Turbo Assembler):** Borland's high-speed alternative to MASM. Functions similarly but supports different macro structures and optimized configurations.
-*   **LINK.EXE:** The linker utility. Combines one or more .OBJ` files together to generate a final executable (.EXE).
+*   **LINK.EXE:** The linker utility. Combines one or more .OBJ files together to generate a final executable (.EXE).
 
 ### Format Converters
 *   **EXE2BIN.EXE:** Converts an .EXE file into a flat, raw binary file (typically .COM). Ideal for programs constrained to a single 64KB memory segment.
@@ -30,12 +30,24 @@ Note: These are native 16-bit MS-DOS binaries. They cannot run directly on moder
 Download and install DOSBox for your operating system.
 
 ### 2. Setting Up Your Workspace
-1. Create a local folder on your computer (e.g., C:\8086).
-2. Clone this repository or copy all files from this directory straight into that folder.
-3. Create your assembly source file inside the same folder (e.g., hello.asm).
+
+Choose **one** of the methods below to get the tools onto your local machine:
+
+#### Option A: Download via Releases (Recommended for quick setup)
+1. Go to the **Releases** section on the right side of this GitHub repository page and download the provided ZIP file containing all the tools.
+2. Extract the contents of the ZIP file directly into a new folder on your computer (e.g., `C:\8086`).
+
+#### Option B: Clone the Repository
+If you have Git installed, open your terminal or command prompt, navigate to your desired directory, and clone this repository:
+```bash
+git clone https://github.com/xnullcode/DOSBOX-8086-Tools
+```
+*(After cloning, move the files to an easily accessible directory like `C:\8086` to simplify mounting).*
+
+---
 
 ### 3. Mounting the Drive in DOSBox
-Open DOSBox and run the following commands to mount your local folder and access the tools:
+Open DOSBox and run the following commands to mount your local workspace folder and access the tools:
 
 ```assembly
 mount c c:\8086
